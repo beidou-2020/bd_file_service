@@ -2,9 +2,11 @@ package com.bd.file;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 // 代表这是一个springboot应用。
 @SpringBootApplication(scanBasePackages = {"com.bd.file"})
+@EnableDiscoveryClient
 public class BdFileServiceApplication {
 
     /**
