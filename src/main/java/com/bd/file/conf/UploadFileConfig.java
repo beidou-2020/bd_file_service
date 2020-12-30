@@ -26,7 +26,7 @@ public class UploadFileConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //  /read/file/**为前端URL访问路径；后面的file:xxxx为本地磁盘映射
         registry.addResourceHandler(fileConstant.getStorageVirtualPath()).
-                addResourceLocations("file:" + fileConstant.getUploadServerPath());
+                addResourceLocations(fileConstant.getUploadServerPath());
     }
 
     @Bean
